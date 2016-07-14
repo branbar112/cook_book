@@ -1,0 +1,23 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Cook Book", '#', id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Help", help_path %></li>
+
+              <li class="divider"></li>
+              <li>
+                <%= link_to "Log out", '#', method: "delete" %>
+              </li>
+              <li><%= link_to "Log in", '#' %></li>
+
+            </ul>
+          </li>
+
+
+
+      </ul>
+    </nav>
+  </div>
+</header>
