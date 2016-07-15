@@ -32,10 +32,12 @@
 <% if @recipes %>
     <% @recipes.each do |rec| %>
     <tr>
-      <td><%= link_to rec.title,recipe_path %></td><br>
+      <td><h4><%= link_to rec.title,recipe_path(rec) %></h4></td><br>
     </tr>
 
 
     <% end %>
 <% end %>
+<div id="space">
   <%= button_to "Add a new recipe", new_recipe_path, :method => "get",:class=>"btn btn-success" %>
+</div>
